@@ -1,0 +1,250 @@
+body{
+    max-width: 240vh;
+    margin: 0 auto;
+    font-family: "Bona Nova SC", serif;
+    flex-direction: column;
+    display: flex;
+    font-weight: 800;
+}
+
+html, body{
+    height: 1200px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+
+
+
+.wrapper{
+    color: #fff;
+    background: linear-gradient(360deg, #170045, #000);
+    height: 100%;
+}
+
+
+.item-list:hover{
+    background-color: #34414d;
+}
+
+.section-header {
+    width: 100%;
+    margin: 0 auto;     
+    line-height: 1.6;   
+    background:rgb(24, 0, 34);
+    box-shadow: 0 15px 15px rgba(24, 0, 34, 0.281);
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+  
+}
+
+.fraglogo {
+    font-size: 20px;
+    color: #fff;
+    width: 100px;
+}
+
+.nav {
+    display: flex;
+    
+}
+
+
+.navlist {
+    margin: auto 0px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    
+}
+
+.navigat {
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    height: 80px;
+    justify-content: space-between;
+    
+
+}
+
+.navigation{
+    margin: 0 40px;
+}
+
+
+.nav-item {
+    color: #c7c7c7;
+    font-size: 18px;
+    font-weight: 800;
+    
+}
+
+.nav-item:hover{
+    color: #e0e0e0; 
+    
+    
+}
+
+
+
+.header-btn{
+    display: flex;
+    margin-right: 0px;
+    flex-shrink: 0;
+    flex-wrap: nowrap; 
+}
+
+
+
+.btn-cntg{
+    display: flex;
+    background: #2c76b3;
+    transition: all 1s;
+    line-height: 20px;
+    
+    
+}
+
+.stars-balance{
+    margin-right: 10px;
+}
+
+.plus{
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 16px;
+    height: 16px;
+}
+
+.btn {
+  display: flex;               /* добавь это */
+  align-items: center;         /* центр по вертикали */
+  justify-content: right;
+  width: 100px;
+  height: 44px;
+  border-radius: 30px;
+  background: #61616152;
+  color: white;
+  font-size: 16px;             /* можно чуть больше для "+" */
+  cursor:default;
+  font-family: sans-serif;
+}
+
+.btn-plus{
+    padding: 8px 10px;
+    margin-right: 3px;
+    background: #2c76b3;
+    border-radius: 50%;
+}
+
+
+.content-btn{
+    margin: auto 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+
+.cards {
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    width: 33.33%;
+    transition: all 400ms ease;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.cards.left {
+    transform: translateX(-50%) scale(0.9);
+}
+
+.cards.right {
+    transform: translateX(50%) scale(0.9);
+}
+
+.cards.active {
+    z-index: 5;
+    position: relative;
+}
+
+.cards__inner {
+    position: relative;
+    padding-bottom: 158.8235294118%;
+}
+
+.shfl-button {
+    margin-bottom: 2em;
+    margin-top: 5em;
+    padding: 20px 30px;
+    
+    font-size: 18px;
+    font-weight: 800;
+    background: #4c146d;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+}
+
+button:hover {
+    background: #531d72;
+}
+
+
+.cards {
+  width: 120px;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: transform 0.5s ease, z-index 0.5s ease;
+}
+
+/* во время тасовки */
+.left  { transform: translateX(-120px) scale(0.9); z-index: 1; }
+.active{ transform: translateX(0) scale(1.1);      z-index: 2; }
+.right { transform: translateX(120px) scale(0.9);  z-index: 1; }
+
+/* режим "ряд" */
+
+.container.row-mode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;              /* расстояние между картами */
+  width: 100%;
+  max-width: 240vh;
+  height: 200px;
+  margin: auto 0;
+  
+}
+
+.row {
+  position: static;         /* убираем absolute */
+  display: inline-block;
+  margin: 0 0px;
+}
+
+.wrap{
+    padding-top: 200px;
+}
